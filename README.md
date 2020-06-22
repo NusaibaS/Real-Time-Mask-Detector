@@ -3,17 +3,17 @@ Real Time Medical Mask Detector
 
 ![alt img](./mask.jpeg)<br>
 
-It's simple project that detect the medical mask in RealTime by using Keras - OpenCv - Facerecognition Library.
+It's simple project that detect the medical mask in realTime camera input by using Keras - OpenCv - Facerecognition Library.
 
 ![alt img](./demo.gif)<br>
 
 # Summary
 
-There is 2 different CNN model. One of them is come from FaceRecognition library which detect the face and return it's position. Other one is special trained model for classify image as with mask or without mask. An Image which we get from camera by using openCv, firstly enter the face detection model to get position of the face. Then, Crop the image and send to second model to get mask existence.
+There are 2 different CNN models. One of them is come from FaceRecognition library which detect the face and return it's position. Other one is special trained model for classify image as with_mask or without_mask. An Image which we get from camera by using openCv, firstly enters the face detection model to get position of the face. Then, Crop the image and send to the second model to get mask existence.
 
 # Dataset and Pretrained Model
 
-This dataset consists of 1,376 images with 2 different class. With mask and withoutmask. There is 690 images for each of them. Dataset artificially made by Prajna Bhandary **[Linkedin](https://www.linkedin.com/feed/update/urn%3Ali%3Aactivity%3A6655711815361761280/)**.  Thanks a lot! You can Download the entire dataset from **[HERE](https://drive.google.com/drive/folders/1cHLb3oX7gLRkrrnIMGbduVvFF2msok6z?usp=sharing/)**
+The dataset we used consists of 1,376 images with 2 different class. with_mask and without_mask. There are 690 images for each of them. Dataset artificially made by Prajna Bhandary **[Linkedin](https://www.linkedin.com/feed/update/urn%3Ali%3Aactivity%3A6655711815361761280/)**.  Thanks a lot! You can Download the entire dataset from **[HERE](https://drive.google.com/drive/folders/1cHLb3oX7gLRkrrnIMGbduVvFF2msok6z?usp=sharing/)**
 
 You can get pretrained model **[HERE](https://drive.google.com/file/d/1ZnNhitQjHcs0c-Ir_4KhJ3h96u6fC-7W/view?usp=sharing/)**
 
@@ -22,11 +22,11 @@ You can get pretrained model **[HERE](https://drive.google.com/file/d/1ZnNhitQjH
 
 1-Face recognition library - `pip3 install face_recognition`
 
-2-Keras, OpenCv, Matplotlib (There is tons of "how to install" tutorials out there.)
+2-Keras, OpenCv, Matplotlib (There are tons of "how to install" tutorials out there.)
 
 # How to Run
 
-If you want to train your own model. You have to download dataset and locate it to directory of train.py. If you want to use pretrained model, download model and lacate it same folder.
+If you want to train your own model, you have to download dataset and locate it to directory of train.py. If you want to use pretrained model, download model and lacate it same folder.
 
 1- `python3 train.py`
 
