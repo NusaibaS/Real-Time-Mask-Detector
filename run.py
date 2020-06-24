@@ -48,7 +48,7 @@ while True:
                 croppedImg=cv2.resize(croppedImg,(width,heigh),interpolation = cv2.INTER_AREA)
                 result = model.predict(croppedImg[None])
             except:
-                #if face is to close to border of frame it cannot perform the crop oparition. Therefore, we throw an exception.  
+                #if face is to close to border of frame, it cannot perform the crop oparation. Therefore, we throw an exception.  
                 print("You are too far from center")
             cv2.rectangle(frame,(person[3],person[0]),(person[1],person[2]),
                           (0,155,255),
