@@ -40,12 +40,15 @@ while True:
         for person in result:
             #MTCNN returns coordinates like (y0,x0,y1,x1) 
             #Crop the face and send to my model
-            #If face located in edge of the frame exception will occur
+            #If face located in edge of the frame exception will occur. 
             try:
+                #it`s cropped 40 pixel wider than original face detection coordinates.
                 croppedImg = frame[person[0]-20:person[2]+20,person[3]-20:person[1]+20]
+                #resize image 150x150 px
                 croppedImg=cv2.resize(croppedImg,(width,heigh),interpolation = cv2.INTER_AREA)
                 result = model.predict(croppedImg[None])
             except:
+                #if face is to close to border of frame it cannot perform the crop oparition. Therefore, we throw an exception.  
                 print("You are too far from center")
             cv2.rectangle(frame,(person[3],person[0]),(person[1],person[2]),
                           (0,155,255),
@@ -56,10 +59,6 @@ while True:
                 cv2.putText(frame,"Mask Off",(person[3],person[0]),cv2.FONT_HERSHEY_SIMPLEX,0.8,(255,255,255),2)
             else:
                 cv2.putText(frame,"Mask On",(person[3],person[0]),cv2.FONT_HERSHEY_SIMPLEX,0.8,(255,255,255),2)
-
-
-
-       
 
 
     #display resulting frame
