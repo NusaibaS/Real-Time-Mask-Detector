@@ -1,8 +1,6 @@
 # Real_Time_Mask_Detector
 Real Time Medical Mask Detector
 
-![alt img](./mask.jpeg)<br>
-
 It's simple project that detect the medical mask in realTime camera input by using Keras - OpenCv - Facerecognition Library.
 
 ![alt img](./demo.gif)<br>
