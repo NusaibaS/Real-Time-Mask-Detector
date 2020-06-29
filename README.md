@@ -24,7 +24,7 @@ You can get pretrained model **[HERE](https://drive.google.com/file/d/1ZnNhitQjH
 
 # How to Run
 
-If you want to train your own model, you have to download dataset and locate into directory of train.py. If you want to use pretrained model, download model and lacate into same folder.
+If you want to train your own model, you have to download dataset and locate into directory of train.py. If you want to use pretrained model, download model and locate it into same folder.
 
 1- `python3 train.py`
 
