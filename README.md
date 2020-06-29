@@ -11,7 +11,7 @@ There are 2 different CNN models in this project. One of them comes from FaceRec
 
 # Dataset and Pretrained Model
 
-The dataset we used consists of 1,376 images with 2 different class. with_mask and without_mask. There are 690 images for each of them. Dataset is artificially made by Prajna Bhandary **[Linkedin](https://www.linkedin.com/feed/update/urn%3Ali%3Aactivity%3A6655711815361761280/)**.  Thanks a lot! You can Download the entire dataset from **[HERE](https://drive.google.com/drive/folders/1cHLb3oX7gLRkrrnIMGbduVvFF2msok6z?usp=sharing/)**
+The dataset we used consists of 1,376 images with 2 different class. with_mask and without_mask. There are 690 images for each of them. Dataset is artificially made by Prajna Bhandary **[Linkedin](https://www.linkedin.com/feed/update/urn%3Ali%3Aactivity%3A6655711815361761280/)**. Biggest Thanks. You can Download the entire dataset from **[HERE](https://drive.google.com/drive/folders/1cHLb3oX7gLRkrrnIMGbduVvFF2msok6z?usp=sharing/)**
 
 You can get pretrained model **[HERE](https://drive.google.com/file/d/1ZnNhitQjHcs0c-Ir_4KhJ3h96u6fC-7W/view?usp=sharing/)**
 
