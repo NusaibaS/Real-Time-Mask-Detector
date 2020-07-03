@@ -1,13 +1,13 @@
 # Real_Time_Mask_Detector
 Real Time Medical Mask Detector
 
-It's simple project that detect the medical mask in realTime camera input using Keras - OpenCv - Facerecognition Library.
+It's a simple project that detects the medical mask in realTime camera input using Keras - OpenCV - Facerecognition Library.
 
 ![alt img](./demo.gif)<br>
 
 # Summary
 
-There are 2 different CNN models in this project. One of them comes from FaceRecognition library which detects the face and returns it's position. Other one is specially trained model to classify image as "with_mask" or "without_mask". An Image which we get from camera by using openCv, firstly enters the face detection model to get face position. Then, crops the area from borders and enters to the second model to get mask existence.
+There are 2 different CNN models in this project. One of them comes from the FaceRecognition library which detects the face and returns its position. The other one is a specially trained model to classify an image as "with_mask" or "without_mask". An Image that we get from the camera by using OpenCV firstly enters the face detection model to get face position. Then, crops the area from borders and enters to the second model to get mask existence.
 
 # Dataset and Pretrained Model
 
@@ -24,7 +24,7 @@ You can get pretrained model **[HERE](https://drive.google.com/file/d/1ZnNhitQjH
 
 # How to Run
 
-If you want to train your own model, you have to download dataset and locate into directory of train.py. If you want to use pretrained model, download model and locate it into same folder.
+If you want to train your model, you have to download the dataset and locate it into the directory of train.py. If you want to use pretrained model, download the model, and locate it into the same folder.
 
 1- `python3 train.py`
 
@@ -34,3 +34,4 @@ If you want to train your own model, you have to download dataset and locate int
 
 https://www.pyimagesearch.com/2020/05/04/covid-19-face-mask-detector-with-opencv-keras-tensorflow-and-deep-learning/
 https://towardsdatascience.com/real-time-face-mask-detector-with-tensorflow-keras-and-opencv-38b552660b64
+
