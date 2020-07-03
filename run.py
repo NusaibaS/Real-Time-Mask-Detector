@@ -42,8 +42,8 @@ while True:
             #Crop the face and send to my model
             #If face located in edge of the frame exception will occur. 
             try:
-                #it`s cropped 40 pixel wider than original face detection coordinates.
-                croppedImg = frame[person[0]-20:person[2]+20,person[3]-20:person[1]+20]
+                #it`s cropped 80 pixel wider than original face detection coordinates.
+                croppedImg = frame[person[0]-40:person[2]+40,person[3]-40:person[1]+40]
                 #resize image 150x150 px
                 croppedImg=cv2.resize(croppedImg,(width,heigh),interpolation = cv2.INTER_AREA)
                 result = model.predict(croppedImg[None])
