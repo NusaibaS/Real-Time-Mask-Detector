@@ -135,22 +135,6 @@ print(classification_report(testY.argmax(axis=1), predIdxs,
 #saving the model into current directory
 model.save(os.path.join(os.getcwd(),"model.h5"))
 
-
-
-"""
-#Show first 25 pictures and it`s predicted class for visualization
-for i in range(25):
-    result = model.predict(testX[[i]])
-    plt.imshow(testX[i])
-    plt.show()
-    if np.argmax(result)== 0:
-        print("mask on")
-    else:
-        print("mask off")
-"""
-
-
-
 # plot the training loss and accuracy
 plt.plot(np.arange(0, EPOCHS), H.history["acc"], label="train_acc")
 plt.plot(np.arange(0, EPOCHS), H.history["val_acc"], label="val_acc")
