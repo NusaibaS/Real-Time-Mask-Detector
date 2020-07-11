@@ -146,7 +146,7 @@ for i in range(25):
     if np.argmax(result)== 0:
         print("mask on")
     else:
-        print("fuck it, mask off")
+        print("mask off")
 """
 
 
