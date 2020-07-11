@@ -7,7 +7,7 @@ It's a simple project that detects the medical mask in realTime camera input usi
 
 # Summary
 
-There are 2 different CNN models in this project. One of them comes from the FaceRecognition library which detects the face and returns its position. The other one is a specially trained model to classify an image as "with_mask" or "without_mask". An Image that we get from the camera by using OpenCV firstly enters the face detection model to get face position. Then, crops the area from borders and enters to the second model to get mask existence.
+There are 2 different CNN models in this project. One of them comes from the FaceRecognition library which detects the face and returns its position. The other one is a specially trained model that classify an image as "with_mask" or "without_mask". An Image that we get from the camera by using OpenCV firstly enters the face detection model to get face position. Then, crops the area from borders and enters to the second model to get mask existence.
 
 # Dataset and Pretrained Model
 
