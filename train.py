@@ -46,7 +46,7 @@ width= 150
 height= 150
 
 
-#This model taken from from a book called Francois Chollet: Deep Learning with Python- Cats vs. Dogs 
+#Define model function
 def defineModel():
     model = Sequential()                                         
     model.add(Conv2D(32,(3,3),activation="relu",input_shape=(width,height,3)))    
